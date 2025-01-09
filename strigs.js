@@ -101,3 +101,6 @@ console.log(replace);
 console.log(replaces);
 console.log(replaceall);
 console.log(replaceupper);
+
+
+
