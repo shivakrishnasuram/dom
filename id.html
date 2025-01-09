@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div>
+        <button onclick="myid()">click here</button>
+    </div>
+    <script>
+        var overaldiv = document.createElement("div")
+        var img1 = document.createElement("img")
+        var myclg = document.createElement("h2")
+        var clgdetails = document.createElement("p");
+        var brs =document.createElement("hr")
+        var idtitle =document.createElement("p")
+        var imgbox =document.createElement("div")
+        var myname =document.createElement("h4")
+        var myrolno =document.createElement("h5")
+        var clginfo =document.createElement("p")
+
+
+
+        function myid() {
+            overaldiv.style.width = "300px"
+            overaldiv.style.border = "2px solid black"
+            overaldiv.style.height = "450px"
+            overaldiv.style.margin = "auto"
+            overaldiv.style.borderRadius = "10px"
+            // overaldiv.style.background = "rgb(252, 231, 180)"
+            document.body.appendChild(overaldiv)
+
+
+
+
+            img1.setAttribute(
+                "src",
+                "https://hellohyderabad.org/wp-content/uploads/2024/02/Untitled-design-2024-02-13T164108.340.jpg"
+            );
+            img1.style.width = "70px";
+            img1.style.height = "70px";
+            img1.style.marginLeft = "10px";
+            img1.style.marginTop = "5px";
+            overaldiv.append(img1);
+
+
+
+
+
+            myclg.innerHTML = "ANURAG UNIVERSITY"
+            myclg.style.color = "red";
+            myclg.style.textShadow = '2px 2px blue';
+            myclg.style.fontSize = "17px"
+            myclg.style.fontFamily = "Arial"
+            myclg.style.marginLeft = "100px"
+            myclg.style.marginTop = "-70px"
+            overaldiv.append(myclg)
+
+
+
+
+
+            clgdetails.innerHTML = "ghatkesar venkatapur road medchal malkajigiri annojiguda 50xxxxx pin"
+            clgdetails.style.color = "blue"
+            clgdetails.style.fontSize = "13px"
+            clgdetails.style.fontWeight = "bold"
+            clgdetails.style.fontFamily = "Arial"
+            clgdetails.style.marginLeft = "100px"
+            clgdetails.style.marginTop = "-11px"
+            overaldiv.append(clgdetails)
+
+
+            // brs.style.color="red"
+            // // brs.style.Size="2px" 
+            // overaldiv.append(brs)
+
+
+            idtitle.innerHTML ="student ID"
+            idtitle.style.color = "white"
+            idtitle.style.fontSize = "18px"
+            idtitle.style.textAlign ="center"
+            idtitle.style.fontFamily = "Arial"
+            idtitle.style.backgroundColor ="black"
+            idtitle.style.width ="100%"
+            idtitle.style.marginTop ="0px"
+            idtitle.style.height ="25px"
+            overaldiv.append(idtitle)
+
+
+
+
+
+
+            imgbox.style.width="120px";
+            imgbox.style.height ="150px"
+            // imgbox.style.backgroundColor = "red"
+            imgbox.style.border = "1.5px solid black"
+            imgbox.style.marginLeft="93px"
+            // imgbox.style.display ="flex"
+            // imgbox.style.justifyContent = "center"
+            // imgbox.style.alignItems = "center"
+            overaldiv.append(imgbox)
+
+
+
+
+
+            myname.innerHTML ="ss.krishnaa";
+            myname.style.color = "black"
+            myname.style.fontSize = "18px"
+            myname.style.textAlign ="center"
+            myname.style.fontFamily = "Arial"
+            myname.style.paddingTop = "0px"
+            myname.style.marginTop = "0px"
+            overaldiv.append(myname)
+
+
+
+
+
+            myrolno.innerHTML ="21EGXXXXXXX";
+            myrolno.style.color = "black"
+            myrolno.style.fontSize = "15px"
+            myrolno.style.textAlign ="center"
+            myrolno.style.fontFamily = "Arial"
+            myrolno.style.paddingTop = "0px"
+            overaldiv.append(myrolno)
+
+
+
+
+
+
+
+            clginfo.innerHTML = "Anurag University is a Private University located in Venkatapur, Medchal-Malkajgiri district, Hyderabad, Telangana, India. Established in 2020, and is one of the First Private Universities in the State of Telangana."
+            clginfo.style.color = "blue"
+            clginfo.style.fontSize = "13px"
+            clginfo.style.textAlign = "center"
+            clginfo.style.width = "100%"    
+            clginfo.style.fontWeight = "bold"
+            clginfo.style.padding = "1px"
+            clginfo.style.display = "inline-block"
+            clginfo.style.fontFamily = "Arial"
+            clginfo.style.marginTop = "0px";
+
+
+            overaldiv.append(clginfo)
+
+
+
+
+
+
+
+
+        }
+        // myid()
+    </script>
+
+</body>
+
+</html>

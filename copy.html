@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Identity_Card</title>
+    <style>
+      #but {
+        border-radius: 5px;
+        padding: 5px;
+        background-color: rgb(255, 94, 0);
+      }
+      #but:hover {
+        transform: scale(1.5, 1.5);
+        background-color: greenyellow;
+      }
+      body {
+        background-color: rgba(14, 159, 211, 0.381);
+        color: rgb(252, 231, 180);
+      }
+    </style>
+  </head>
+  <body>
+    <button onclick="myid()" id="but">HereIsID</button>
+
+    <script>
+      let div1 = document.createElement("div");
+      let img1 = document.createElement("img");
+      let title1 = document.createElement("h1");
+      let title2 = document.createElement("h6");
+      let title3 = document.createElement("h6");
+      let div2 = document.createElement("div");
+      let title4 = document.createElement("h3");
+      let img2 = document.createElement("img");
+      let img3 = document.createElement("img");
+      // let validity = document.createElement("h6");
+      let myname = document.createElement("h3");
+      let barcode = document.createElement("img");
+      let branchname = document.createElement("h5");
+      let bname = document.createElement("h5");
+      let htno = document.createElement("h5");
+      let hnum = document.createElement("h5");
+      let pimg = document.createElement("img");
+      let ppname = document.createElement("h5");
+      let adddiv = document.createElement("div");
+      let address = document.createElement("h5");
+      let addis = document.createElement("h5");
+
+      function myid() {
+        // main div //
+        div1.style.border = "2px solid black";
+        div1.style.width = "300px";
+        div1.style.height = "450px";
+        div1.style.margin = "auto";
+        div1.style.borderRadius = "10PX";
+        div1.style.backgroundColor = "rgb(252, 231, 180)";
+        // div1.style.boxShadow = "10px 10px 10px pink"
+        document.body.append(div1);
+
+        // college logo //
+        img1.setAttribute(
+          "src",
+          "https://pvkkit.ac.in/images/PVKKIT-logo-Round.png"
+        );
+        img1.style.width = "70px";
+        img1.style.height = "70px";
+        img1.style.marginLeft = "10px";
+        img1.style.marginTop = "5px";
+        div1.append(img1);
+
+        // college name //
+        title1.innerHTML = "P V K K I T";
+        title1.style.marginLeft = "110px";
+        title1.style.marginTop = "-70px";
+        title1.style.color = "red";
+        div1.append(title1);
+
+        // college address //
+        title2.innerHTML =
+          "Sanapa Road, Rudrampeta, <br>Anantapuramu - 515001 ";
+        title2.style.marginLeft = "130px";
+        title2.style.marginTop = "-25px";
+        (title2.style.color = "black"), div1.append(title2);
+
+        // college mail ID //
+        title3.innerHTML = "www.pvkkit.ac.in";
+        title3.style.color = "purple";
+        title3.style.marginLeft = "145px";
+        title3.style.marginTop = "-25px";
+        div1.append(title3);
+
+        // ID name //
+        div2.style.border = "2px solid rgb(108, 108, 216)";
+        div2.style.width = "297px";
+        div2.style.height = "25px";
+        div2.style.backgroundColor = "rgb(108, 108, 216)";
+        div2.style.marginTop = "-25px";
+        div1.append(div2);
+
+        // ID name internal //
+        title4.innerHTML = "IDENTITY CARD";
+        title4.style.marginTop = "-0px";
+        title4.style.color = "white";
+        title4.style.marginLeft = "70px";
+        div2.append(title4);
+
+        // pass photo NK //
+
+        img2.setAttribute("src", "./karthik.jpg");
+        img2.style.border = "1px solid black";
+        img2.style.width = "100px";
+        img2.style.height = "120px";
+        img2.style.marginLeft = "100px";
+        img2.style.marginTop = "10px";
+        div1.append(img2);
+
+        //blood dot div //
+
+        img3.setAttribute(
+          "src",
+          "https://img.freepik.com/premium-vector/blood-group-blood-type-medical-icon-vector_917138-6959.jpg"
+        );
+        img3.style.width = "50px";
+        img3.style.height = "50px";
+        img3.style.marginLeft = "20px";
+        div1.append(img3);
+
+        // validity date div //
+        // validity.innerHTML = "Validity : 20**-20** ";
+        // validity.style. = "90"
+        //div1.append(validity);
+
+        //my name //
+
+        myname.innerHTML = "NAYANI KARTHIK";
+        myname.style.marginLeft = "65px";
+        myname.style.marginTop = "-1px";
+        myname.style.color = "rgb(255, 54, 88)";
+        div1.append(myname);
+
+        //bar code //
+
+        barcode.setAttribute("src", "./ID bar code.jpg");
+        barcode.style.width = "130px";
+        barcode.style.height = "20px";
+        barcode.style.marginLeft = "80px";
+        barcode.style.marginTop = "-40px";
+        div1.append(barcode);
+
+        // branch name //
+
+        branchname.innerHTML = "Branch : ";
+        branchname.style.marginLeft = "5px";
+        branchname.style.marginTop = "-1px";
+        branchname.style.color = "red";
+        div1.append(branchname);
+
+        // mechanical //
+
+        bname.innerHTML = "MECHANICAL";
+        bname.style.color = "black";
+        bname.style.marginLeft = "60px";
+        bname.style.marginTop = "-13px";
+        branchname.append(bname);
+
+        // HT.No//
+        htno.innerHTML = "HT.No. : ";
+        htno.style.marginLeft = "5px";
+        htno.style.marginTop = "-15px";
+        htno.style.color = "red";
+        div1.append(htno);
+
+        // hnum //
+        hnum.innerHTML = "***N5A0330";
+        hnum.style.color = "black";
+        hnum.style.marginLeft = "60px";
+        hnum.style.marginTop = "-13px";
+        htno.append(hnum);
+
+        //principal image //
+
+        pimg.setAttribute("src", "https://pvkkit.ac.in/images/Principal.png");
+        pimg.style.border = "1px solid black";
+        pimg.style.width = "70px";
+        pimg.style.height = "70px";
+        pimg.style.marginLeft = "210px";
+        pimg.style.marginTop = "-60px";
+        pimg.style.opacity = "0.5";
+        div1.append(pimg);
+
+        // principal name //
+        ppname.innerHTML = "Principal";
+        ppname.style.color = "black";
+        ppname.style.marginLeft = "220px";
+        ppname.style.marginTop = "-6px";
+        div1.append(ppname);
+
+        // address div //
+        adddiv.style.boder = "1px solid rgb(108, 108, 216)";
+        adddiv.style.width = "300px";
+        adddiv.style.height = "57px";
+        adddiv.style.marginTop = "-20.5px";
+        adddiv.style.marginLeft = "0px";
+        adddiv.style.backgroundColor = "rgb(108, 108, 216)";
+        adddiv.style.borderBottomLeftRadius = "8px";
+        adddiv.style.borderBottomRightRadius = "8px";
+        div1.append(adddiv);
+
+        //address //
+        address.innerHTML = "Address :";
+        address.style.marginLeft = "5px";
+        address.style.color = "white";
+        adddiv.append(address);
+
+        // address details//
+
+        addis.innerHTML =
+          "25/585/31-a, PARTHASARADHI NAGAR,<br> DHARMAVARAM (M), ANANTAPUR (D), <br> CELL:9014854584";
+        addis.style.marginLeft = "60px";
+        addis.style.marginTop = "-3px";
+        addis.style.color = "white";
+        address.append(addis);
+      }
+    </script>
+  </body>
+</html>
