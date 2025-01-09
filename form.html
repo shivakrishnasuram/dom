@@ -4,30 +4,21 @@
     <title>Print Input Data</title>
 </head>
 <body>
-    <form action="" onclick="sub(event)">
-        <input type="text" id="inputField" placeholder="Enter your name">
-        <input type="tel" id="phone" placeholder="Enter your phone number">
-        <button type="submit">Submit</button>
+    <form action="">
+        <input type="text" onsubmit="handlesubmit(event)" id="ip1" name="name" placeholder="Enter your name">
+        <button> submit
+        </button>
     </form>
-    <p id="name"></p>
-    <p id="phoneNumber"></p>
-
+    <p id="p1"></p>
     <script>
-        function sub(event) {
-            event.preventDefault();  // Prevent form submission
-            
-            // Get the input elements and their values
-            let inputField = document.getElementById("inputField");
-            let phone = document.getElementById("phone");
-            let inputValue = inputField.value;
-            let phoneValue = phone.value;
-            
-            // Set the values as the content of the <p> elements
-            let output = document.getElementById("name");
-            let number = document.getElementById("phoneNumber");
-            output.innerHTML = "Name: " + inputValue;
-            number.innerHTML = "Phone Number: " + phoneValue;
+        let input1 =document.getElementById("ip1");
+        let data =document.getElementById("p1");
+        function handlesubmit(event){
+            event.preventDefault();
+            data.innerHTML =input1.value;
         }
     </script>
+    
+
 </body>
 </html>
