@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="number" id="generateotp">
+    <button onclick="generate()">
+        generate
+    </button>
+    <button onclick="validate()">
+        validate
+    </button>
+    <p id="55"></p>
+    <script>
+        let otp;
+        let data;
+        let valueotp;
+        function generate() {
+            otp = Math.floor(10000+Math.random() * 10000);
+            console.log(otp);
+            data =document.getElementById("55");
+            data.innerHTML =otp;
+        }
+        function validate(){
+            valueotp =document.getElementById("generateotp").value;
+            console.log(valueotp);
+            if(otp == valueotp){
+                alert("otp is valid");
+            }
+            else{
+                alert("otp is invalid");
+            }
+        }
+    </script>
+    
+</body>
+</html>
